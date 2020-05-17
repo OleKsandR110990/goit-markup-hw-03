@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before
+*::after {
+  box-sizing: inherit;
+}
 /* цвет основного текста #757575 */
 /* вторичный цвет текста #212121 */
 /* белый текст #FFFFFF */
@@ -18,17 +27,47 @@ body {
   
   font-family: Roboto, sans-serif;
 }
-.tim {
+a {
+  text-decoration: none;
+}
+.fill {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--fon-color);
 }
 .list {
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 ul {
   list-style: none;
+  padding-inline-start: 0;
+}
+.marg {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* container to header */
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid rebeccapurple;
 }
 
 /* Logo */
+.h {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .h .logo {
   color: var(--title-text-color);
   font-family: Raleway, cursive;
@@ -43,6 +82,12 @@ letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
+.f {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 48px;
+  padding-bottom: 10px;
+}
 .f .logo {
   color: var(--pimary-white-color);
   font-family: Raleway, cursive;
@@ -54,6 +99,7 @@ letter-spacing: 0.03em;
 
 /* site nav */
 .site-nav .list {
+
   color: var(--title-text-color);
 
 font-weight: 500;
@@ -67,8 +113,17 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
+
 /* Hero */
+
+.hero {
+  text-align: center;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 46px;
+  
   color: var(--pimary-white-color);
   background-color: var(--fon-color);
 
@@ -77,10 +132,10 @@ letter-spacing: 0.02em;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  
 }
-
-.avto-h .button {
+/* скорее всего ненужно */
+/* .avto-h .button {
   color: var(--pimary-white-color);
   background-color: var(--accent-color);
   
@@ -90,10 +145,23 @@ letter-spacing: 0.02em;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Преимущества без заголовка */
-.feature-list .title{
+.feature-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.imag {
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+.feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-size: 14px;
@@ -103,6 +171,9 @@ letter-spacing: 0.02em;
 }
 
 .feature-list .info {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--primary-text-color);
 
   font-weight: 400;
@@ -112,7 +183,15 @@ letter-spacing: 0.02em;
 }
 
 /* Все заголовки */
+
+.sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-size: 36px;
@@ -123,18 +202,50 @@ letter-spacing: 0.02em;
 
 /* Чем занимаемся - Приложения */
 .application .app-text {
+
   color: var(--pimary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
+  
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
+
+  width: 380px;
+  height: 70px;
+  border-radius: 0px 0px 4px 4px;
+
 }
 
 /* Наша команда */
-.tim-list .title{
+
+.section-title-team {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+}
+
+.imag-team {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -143,8 +254,79 @@ letter-spacing: 0.02em;
   letter-spacing: 0.03em;
 }
 
+.info-team {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-n {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Клиенты изображения */
+
+.customers {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+/* Button page 1/2 */
+.b {
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.b .button {
+
+  color: var(--pimary-white-color);
+  background-color: var(--accent-color);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+
+.bf {
+  padding: 10px 45px;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bf .button {
+
+  color: var(--pimary-white-color);
+  background-color: var(--accent-color);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+
+  padding: 10px 45px;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Button page 2 */
-.avto-nav .button {
+.button {
   color: var(--title-text-color);
   
   font-family: Roboto;
@@ -153,18 +335,38 @@ letter-spacing: 0.02em;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
-.avto-nav .button:hover, 
-.avto-nav .button-primary:focus {
+.button:hover, 
+.button-primary:focus {
   background-color: var(--accent-color);
   color: var(--pimary-white-color);
 }
 
 /* ПОРТФОЛИО */
+.portfolio {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+
+.navg {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+/* portfolio-im */
+
+.portfolio-im {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
 
 /* Название проектов */
 
 .section-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-size: 18px;
@@ -175,6 +377,9 @@ letter-spacing: 0.02em;
 /* Сектор проекта */
 
 .section .resource {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   color: var(--primary-text-color);
 
   font-weight: 400;
@@ -186,6 +391,9 @@ letter-spacing: 0.02em;
 /* Текст рыба */
 
 .section .text-fish {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--pimary-white-color);
   background-color: var(--fon-color);
 
@@ -197,9 +405,9 @@ letter-spacing: 0.02em;
 
 /* Футер заливка */
 
-/* Адрес */
-
-.f .address {
+.fu .address {
+  margin-top: 0;
+  margin-bottom: 9px;
   color: var(--pimary-white-color);
 
   font-weight: 400;
@@ -210,7 +418,22 @@ letter-spacing: 0.02em;
 
 /* Адрес прозрачный */
 
-.f .transparent {
+.fu .transparent {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.fu .transparents {
+  margin-top: 0;
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 
   font-weight: 400;
@@ -221,8 +444,11 @@ letter-spacing: 0.02em;
 
 /* Заголовки */
 
- .f .big-t {
-   color: var(--pimary-white-color);
+ .big-t {
+  margin-top: 0;
+  margin-bottom: 21px;
+
+  color: var(--pimary-white-color);
 
   font-weight: 700;
   font-size: 14px;
@@ -232,6 +458,11 @@ letter-spacing: 0.02em;
 }
 
 /* Finish */
+
+.finish {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .f .finish {
   color: rgba(255, 255, 255, 0.4);
