@@ -62,11 +62,13 @@ ul {
 }
 
 /* Logo */
+
 .h {
+  /* display: flex; */
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-right: 85px;
+
 }
 .h .logo {
   color: var(--title-text-color);
@@ -97,7 +99,15 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 }
 
+/* main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* site nav */
+
 .site-nav .list {
 
   color: var(--title-text-color);
@@ -113,6 +123,39 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
+/* .site-nav .item {
+
+} */
+
+.a .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.a .list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* тоже правильно v */
+/* .site-nav .item + .item {
+  margin-left: 50px;
+} */
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.a .address {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 305px;
+}
+
+.site-nav .contact:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Hero */
 
