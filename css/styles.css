@@ -451,6 +451,7 @@ letter-spacing: 0.02em;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  background: #F5F4FA;
 }
 .button:hover, 
 .button-primary:focus {
