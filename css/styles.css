@@ -66,40 +66,40 @@ ul {
 
 /* Logo */
 
-.h {
+.header {
   /* display: flex; */
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 85px;
 
 }
-.h .logo {
+.header .logo {
   color: var(--title-text-color);
   font-family: Raleway, cursive;
   
 
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo .accent {
   color: var(--accent-color);
 }
 
-.f {
+.footer {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 48px;
   padding-bottom: 10px;
 }
-.f .logo {
+.footer .logo {
   color: var(--pimary-white-color);
   font-family: Raleway, cursive;
 
-font-size: 22px;
-line-height: 1.18;
-letter-spacing: 0.03em;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 /* main-nav */
@@ -490,8 +490,8 @@ letter-spacing: 0.02em;
   color: var(--title-text-color);
 
   font-size: 18px;
- line-height: 2;
- letter-spacing: 0.06em;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 /* Сектор проекта */
@@ -531,7 +531,14 @@ footer {
 
 /* Адрес */
 
-.fu .address {
+.contacts {
+  display: flex;
+  font-style: normal;
+  flex-direction: column;
+}
+
+.address {
+  font-style: normal;
   margin-top: 0;
   margin-bottom: 9px;
   color: var(--pimary-white-color);
@@ -544,7 +551,7 @@ footer {
 
 /* Адрес прозрачный */
 
-.fu .transparent {
+.transparent {
   margin-top: 0;
   margin-bottom: 9px;
 
@@ -556,7 +563,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.fu .transparents {
+.transparents {
   margin-top: 0;
   margin-bottom: 9px;
 
@@ -570,9 +577,11 @@ footer {
 
 /* Заголовки */
 
- .big-t {
+ .join {
+  display: block;
   margin-top: 0;
   margin-bottom: 21px;
+  padding-top: 56px;
 
   color: var(--pimary-white-color);
 
@@ -583,18 +592,35 @@ footer {
   text-transform: uppercase;
 }
 
+.blocks {
+  display: flex;
+}
+
+/* Отступы */
+
+.contacts-all {
+  margin-right: 69px;
+}
+.join-to {
+  margin-right: 94px;
+}
+
 /* Finish */
 
 .finish {
   margin-top: 0;
   margin-bottom: 0;
-}
+  text-align: center;
 
-.f .finish {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
   color: rgba(255, 255, 255, 0.4);
 
   font-weight: 400;
 font-size: 12px;
 line-height: 2;
 letter-spacing: 0.03em;
+
 }
