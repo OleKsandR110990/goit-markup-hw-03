@@ -119,6 +119,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+
 }
 
 .site-nav .link:hover, 
@@ -126,9 +127,9 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
-/* .site-nav .item {
-
-} */
+.a {
+  border-bottom: 1px solid #ECECEC;
+}
 
 .a .link {
   display: block;
@@ -452,6 +453,7 @@ letter-spacing: 0.02em;
   letter-spacing: 0.03em;
   border-radius: 4px;
   background: #F5F4FA;
+  
 }
 .button:hover, 
 .button-primary:focus {
@@ -460,6 +462,7 @@ letter-spacing: 0.02em;
 }
 
 /* ПОРТФОЛИО */
+
 
 /* .a {
   padding-bottom: 94px;
@@ -480,16 +483,65 @@ letter-spacing: 0.02em;
 .navg .navli + .navli {
   margin-left: 8px;
 }
-/* portfolio-im */
+
+/* Портфолио КАРТОЧКИ */
+
+.card-box {
+  display: flex;
+}
 
 .examples {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.examples .card + .card {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} 
+
+.card {
+  width: 370px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+
+.card-content {
+  display: block;
+  padding: 20px 24px;   
+
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  /* border-radius: 5px; */
+}
+
+.section-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.resource-name{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .examples {
   margin-top: 0;
   margin-bottom: 0;
 }
 .portfolio-im {
   margin-top: 0;
   margin-bottom: 20px;
-}
+} */
 
 /* Название проектов */
 
@@ -498,7 +550,7 @@ letter-spacing: 0.02em;
   margin-bottom: 4px;
 
   color: var(--title-text-color);
-
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
